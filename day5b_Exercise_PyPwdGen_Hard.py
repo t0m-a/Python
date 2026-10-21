@@ -22,6 +22,38 @@ for letter in letters:
     letters_in_password += random.choice(letters)
 truncated_letters_in_password = letters_in_password[:nr_letters]
 # print(truncated_letters_in_password)
+#
+# Alternative method to generate random strings using range(), as in the exercise provided solution:
+# password = ""
+# Enumerate characters chars in a range from 1 to the number of letters chosen by the user adding +1 at the end 
+# to include the last letter/characters/item of the range, see range() function in course notes. 
+# IE: 4 characters request with range from 1 to 5 generating a character at each pass of the range.
+# Remeber range() doesn't include the upper limit.
+# for chars in range(1, nr_letters + 1):
+#   Making a random.choice in the list of letters and storing the result in a variable
+#   random_chars = random.choice(letters)
+#   Concatenating the random characters in a string and adding it to the password variable
+#   password += random_chars
+# Shorter version
+# for chars in range(1, nr_letters, 1):
+#   password =+ random.choice(letters)
+# Even shorter, iterate the for loop below with nr_symbols using list symbols and nr_numbers using list numbers. 
+# for chars in range(0, nr_letters):
+#   password =+ random.choice(letters)
+# Then to randomize the final results into the final password, use a list for password variable rather then a string.
+# password_list = []
+# for chars in range(0, nr_letters):
+#  Adding results or append results to the passowrd_list object.
+#   password_list =+ random.choice(letters)
+#OR password_list.append(random.choice(letters))
+# Then randomizing the content of the list passowrd_list.
+# random.shuffle(password_list)
+# Then retreiving the shuffled content of passowrd_list and storing/converting the content into a string:
+# Initializing an empty string for the final password
+# password = ""
+# Iterating through the list and adding each character into the string
+# for char in passowrd_list:
+# password += char
 
 # Generating random symbols selection and truncating to user's input value.
 for symbol in symbols:
