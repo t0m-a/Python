@@ -1,0 +1,38 @@
+# Conditional operators are used to perform different actions based on different conditions. 
+# In Python, we use the if, elif, and else statements to implement conditional logic.
+# if condition:
+#    DO THIS # code to execute if condition is True
+# elif another_condition:
+#    DO THAT # code to execute if another_condition is True
+# else:
+#    DO SOMETHING ELSE # code to execute if all conditions are False
+# Identation is crucial in Python, as it defines the blocks of code that belong to each condition.
+# if, elif and else are at the same level in that they are all part of the same conditional structure in this example.
+# If idented one level further, it means that the code belongs to the previous condition. Nested conditions.
+# Nested conditions can be used to check for multiple conditions within a single block of code.
+# COMPARISON OPERATORS
+# Comparison operators are used to compare two values. They return a boolean value (True or False) based on the comparison.
+# == : Strictly Equal to 
+# != : Not equal to
+# > : Greater than
+# < : Less than
+# >= : Greater than or equal to
+# <= : Less than or equal to
+# = is assinging a value to a variable, while == is used to compare two values for equality.
+if 5 == 5:
+    print("5 is equal to 5")
+if 5 != 10:
+    print("5 is not equal to 10")  
+# Modulo operator (%) returns the remainder of a division operation. It can be used to check if a number is even or odd.
+if 10 % 2 == 0:
+    print("10 is even") 
+else:
+    print("10 is odd") 
+10 % 3 # will give the remainder of 10 divided by 3, which is 1
+# Even or odd?
+number_to_check = int(input("Enter a number to check if it is even or odd: "))
+if number_to_check % 2 == 0:
+    print(f"{number_to_check} is even")
+else:
+    print(f"{number_to_check} is odd")
+# Next chapter: Nested if statements and elif statements

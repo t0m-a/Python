@@ -1,0 +1,37 @@
+# Functions and variables basics
+# 
+# # print("hello " + input("name ") + "!")
+# Careful to nested functions order of processing
+name = input("Enter your name: ")
+print("Hello " + name + "!")
+print(len(name))
+
+# Read functions from right to left, this is a combined function
+print(len(input("What is your name?")))
+# Using variables to store results of functions
+username = input("Enter your username: ")
+length = len(username)
+print(username)
+print(length)
+
+# Swapping variables values
+a = 5
+b = 4
+# reassign values to variables to swap their content
+a, b = b, a
+print(a)
+print(b)
+
+# Variables naming
+# Make your code readable and understandable
+# separate with underscore, cannot start with a number, don't use function names
+# Variables are defined or initialized then referred to or called back
+user_name = "string"
+
+# Hierarchy and consistency are key
+# Python variables ARE STRICTLY CASE-SENSITIVE
+
+print("Welcome to the band name generator")
+city_name = input("What is the name of your city?\n")
+pet_name = input("What is the name of your pet?\n")
+print("Your band name could be " + city_name + " " + pet_name)

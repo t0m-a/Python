@@ -1,0 +1,96 @@
+# Data types in Python
+# string, integer, bolean. "1234" is a string. 1234 is an integer. Bolean is true or false. 
+# "hello"[0] index of the string 0 to 4. This is called subscripting.
+print("hello"[4])
+# Index can be negative. -1 is the last index, -2 is the second last index and so on.
+# It means you start counting from the end of the string.
+print("hello"[-1]) # gives the same result than printing "hello"[4]
+# Integer are whole numbers without decimal points.
+# Large integers are supported in Python. You can use underscores to make them more readable.
+print(123_456_789) # For 123,456,789 for 123 millions 456 thousands 789.
+# float or floating point number = numbers with decimal points. 3.14 is a float. 
+# 3 is an integer. 3.0 is a float.
+# Bolean true or false is used to test status of a condition. 
+# It is used in conditional statements like if, else, elif.
+# type() # Check and return the data type of a variable or value.
+print( type(3.14) ) # Returns <class 'float'> in terminal. 
+# It is a float data type. Called type checking.
+print( type("string"))
+print( type(3))
+print( type(3.14))
+print( type(True)) # Boleans are case-sensitive True is not the same as true. 
+# These are called the major PRIMITIVE data types in Python.
+# Convert data types or type casting. You can convert one data type to another data type.
+# Converting data type requires a value that is correct for the data type you are converting to. 
+# For example, you cannot convert a string that contains letters to an integer.
+# int() # Convert to integer data type. It can convert a float to an integer by removing the decimal point.
+print(int(3.14)) # Converts the float 3.14 to the integer 3.
+# float() # Convert to float data type. It can convert an integer to a float by adding a decimal point.
+print(float(3)) # Converts the integer 3 to the float 3.0.
+# str() # Convert to string data type. It can convert an integer or a float to a string.
+print(str(3.14)) # Converts the float 3.14 to the string "
+# bool() # Convert to boolean data type. It can convert an integer or a float to a boolean.
+print(bool(0)) # Converts the integer 0 to the boolean False.
+print(bool(1)) # Converts the integer 1 to the boolean True.
+print(bool("hello")) # Converts the string "hello" to the boolean True.
+print(bool("")) # Converts the empty string to the boolean False.
+print(bool(3.14)) # Converts the float 3.14 to the boolean True.
+# Conversion of a integer type received value into a string to print it out:
+print("Number of letters in your name: " + str(len(input("Enter your name"))))
+#
+name = input("Enter your name 2nd method, breaking input function in a variable initialized before the conversion of length integer into a string: ")
+print("Number of letters in your name: " + str(len(name)))
+# Use type() when you need to confirm a data type of a variable or value.
+#
+# MATHEMATICAL operations in Python. A division even clean will ALWAYS RETURN A FLOAT. Use // for integer division.
+print(3 / 2) # Returns 1.5 IMPLICIT TYPE CASTING. The result is a float even though both operands are integers.
+print(3 // 2) # Returns 1 This methods is called floor division. 
+# !!! It returns the largest integer less than or equal to the result of the division. Rounding down to the nearest integer. !!!
+# Puissance or exponentiation operator is **. It raises the left operand to the power of the right operand.
+print(3 ** 2) # Returns 9. 3 raised to the power of 2 is 9. 3 * 3 = 9.
+# (3 ** 3) = 27. 3*3 then result (9) * 3 again.
+# 
+# PEMDAS or BODMAS is the order of operations in Python. Parentheses, Exponents, Multiplication and Division, Addition and Subtraction.
+# Be careful with the order of operations when using multiple operators in a single expression. 
+# Use parentheses to group operations and clarify the order of operations.
+# When using multiple operators in a single expression, Python follows the order of operations.
+# When in doubt, use parentheses to group operations and clarify the order of operations.
+# When operations are of the same precedence, Python evaluates them from left to right.
+#
+# Using functions, Python processes the functions from the innermost to the outermost. From inside out.
+# The innermost function is evaluated first, then the result is passed to the outer function.
+#
+# LEFT TO RIGHT ; INSIDE TO OUTSIDE.
+#
+# NUMBERS Manipulation.
+weight = 84
+height = 1.65
+bmi = weight / (height ** 2)
+print(int(bmi))
+print(round(bmi)) # Rounds the float to the nearest integer. 30.8 rounds to 31. Rounds up or down depending on the decimal value.
+print(round(bmi, 2)) # Rounds the float to 2 decimal places. round(number, ndigits) where ndigits is the number of decimal places to round to.
+# Assignment operators are used to assign values to variables. They are used to update the value of a variable.
+score = 0
+score +=1
+print(score)
+1
+score +=3
+print(score)
+4
+score -=1
+print(score)
+3
+# F-Strings or formatted strings are used to format strings in Python. They are used to insert variables into strings. 
+# They are prefixed with an f or F and use curly braces {} to insert variables into strings.
+score = 0
+height = 1.65
+is_winning = True
+print(f"Your score is {score}, your height is {height}, you are winning is {is_winning}.") 
+# f-strings are used to format strings in Python. They are used to insert variables into strings.
+print('''
+Multline strings can be created using triple quotes. 
+They can be used to create strings that span multiple lines.
+They can be used to create strings that contain both single and double quotes without the need for escaping them.
+''')
+print('A string with a "quote"') # Single quotes protects the double quotes inside the string, without the need for escaping them.
+print('A string with a "quote" then escape a single quote \' with a backslash') 
