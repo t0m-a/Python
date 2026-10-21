@@ -55,3 +55,29 @@ print(f"The highest value is: {highest_score}")
 # Use the comparison to update the variable content only if (operation result matches), then print the result of the iterated operation.
 
 # for loops and the range() function
+# The range() function doesn't do anything else than defining a range of numbers from start to end.
+# It is not inclusive of the last number, the stop number.
+# IE: if you need the range to go from 1 to 10 you need to make it range(1, 11)
+for number in range(1, 11):
+    print(number)
+# You can add a third number, parameter to the range() and it will be the steps used to count through the range
+for number in range(1, 31, 5):
+    print(number) # Print number advancing by steps of 5 numbers
+# 1+5=6, prints 6; 6+5=11, prints 11 etc.
+# Exercise the GAUSS challenge:
+total_addition = 0
+for number in range(1, 101):
+    total_addition += number
+print(total_addition) # Results in Gauss' value: 5050, 
+# additioning all numbers from 1 to 100 to each other until getting the full sum of 1+2+3+4 etc.
+#
+# FizzBuzz game:
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 5:
+        print("Buzz")
+    else:
+        print(number)
