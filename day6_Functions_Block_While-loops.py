@@ -59,4 +59,21 @@ say_hello_and_bye_twice()
 # Here a for loop running in a range spares writing/running jump() 6 times
 # for step in range(6):
 #   jump()
-
+#
+# While lopp
+# Reminder, we saw:
+# for item in list_of_items:
+#   do something
+# This will iterate trhough the whole list content performing an action fir each item in the list.
+# for item in range(a, b)
+#   do something
+# This will peform an action accordingly to the number of times we ask it to do so using a range(), 
+# Non-inclusively of the upper top value in the range, so range(1, 6) will iterate the action 5 times.
+#
+# while something_is_true: # A condition being true:
+#   # do domething repeatedly 
+a = 10
+while a > 0:
+    print(a)
+    a -= 1
+print(f"Done: a = {a}.")
