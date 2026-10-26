@@ -149,3 +149,46 @@ print(f"We're done, our target is not NOT True anymore: {a}\n")
 #       jump()
 #     else:
 #       move()
+def function():
+    do_something()
+    while a_condition_is_True():
+        do_something_else()
+    while a_condition_status_changed():
+        then_do_something_else 
+# def jump():
+#     turn_left()
+#     We can have while loops inside functions
+#       We also can have nested while loops based on indentation
+#     while wall_in_front():
+#         move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     while front_is_clear():
+#         move()
+#         turn_left
+# while not at_goal():
+#     if wall_in_front():
+#         jump()
+#     else:
+#         move()
+while not condition()
+    if another_condition():
+        do()
+    elif another_condition():
+        do()
+    else:
+        do()
+
+while condition() != True:
+    if condition():
+        do()
+    elif condition():
+        do()
+    elif conditon() == True:
+        do()
+    else:
+        do()
+while something_else(): # implicite True
+    while not something_else(): # Negating
+        if condition == True # etc...
